@@ -1,0 +1,593 @@
+{
+ "geoms": {
+ "geom1_point_cluster": {
+ "geom": "point",
+"classed": "geom1_point_cluster",
+"aes": {
+ "x": "x",
+"y": "y",
+"colour": "cluster",
+"showSelected1": "iteration",
+"showSelected2": "cluster" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "iteration", "cluster" ],
+"help_showSelected": [ "iteration", "cluster" ] 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected1": "integer",
+"showSelected2": "factor",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [
+ "iteration" 
+],
+"nest_order": [
+ "showSelected2" 
+],
+"subset_order": [
+ "showSelected2" 
+],
+"columns": {
+ "common": [
+ "group",
+"x",
+"y" 
+] 
+},
+"chunks": {
+ "1": 1,
+"2": 2,
+"3": 3,
+"4": 4,
+"5": 5,
+"6": 6,
+"7": 7,
+"8": 8,
+"9": 9,
+"10": 10 
+},
+"total": 10 
+},
+"geom2_point_cluster": {
+ "geom": "point",
+"classed": "geom2_point_cluster",
+"aes": {
+ "x": "x",
+"y": "y",
+"fill": "cluster",
+"showSelected1": "iteration",
+"showSelected2": "cluster" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"shape":       21,
+"size":        7,
+"colour": "#000000",
+"stroke":      1.5,
+"showSelected": [ "iteration", "cluster" ],
+"help_showSelected": [ "iteration", "cluster" ] 
+},
+"types": {
+ "fill": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected1": "integer",
+"showSelected2": "factor",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_line_objective": {
+ "geom": "line",
+"classed": "geom3_line_objective",
+"aes": {
+ "x": "iteration",
+"y": "total_ss" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom4_point_objective": {
+ "geom": "point",
+"classed": "geom4_point_objective",
+"aes": {
+ "x": "iteration",
+"y": "total_ss",
+"showSelected1": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"showSelected": "iteration",
+"help_showSelected": "iteration" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"time": {
+ "variable": "iteration",
+"ms":     1200,
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
+},
+"selectors": {
+ "cluster": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "3", "1", "2" ],
+"levels": [ "3", "1", "2" ],
+"update": [
+ "geom1_point_cluster",
+"geom2_point_cluster" 
+] 
+},
+"iteration": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"chunks": "iteration",
+"selected": "1",
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+"update": [
+ "geom1_point_cluster",
+"geom2_point_cluster",
+"geom4_point_objective" 
+] 
+} 
+},
+"plots": {
+ "cluster": {
+ "panel_margin_lines":     0.36,
+"legend": {
+ "Cluster": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Cluster",
+"class": "cluster",
+"selector": "cluster",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "12.8pt",
+"title_size": "16pt",
+"entries": [
+ {
+ "pointcolour": "#619CFF",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "3",
+"pointfill": "#FFFFFF" 
+},
+{
+ "pointcolour": "#00BA38",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "2",
+"pointfill": "#FFFFFF" 
+},
+{
+ "pointcolour": "#F8766D",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "1",
+"pointfill": "#FFFFFF" 
+} 
+] 
+},
+"cluster": {
+ "guide": "legend",
+"geoms": "point",
+"title": "cluster",
+"class": "cluster",
+"selector": "cluster",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "12.8pt",
+"title_size": "16pt",
+"entries": [
+ {
+ "pointfill": "#619CFF",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        7,
+"pointstroke":      1.5,
+"label": "3" 
+},
+{
+ "pointfill": "#00BA38",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        7,
+"pointstroke":      1.5,
+"label": "2" 
+},
+{
+ "pointfill": "#F8766D",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        7,
+"pointstroke":      1.5,
+"label": "1" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       2,
+       4,
+       6 
+] 
+],
+"y": [
+ [
+        0,
+     2.5,
+       5 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -1,
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7 
+] 
+],
+"y": [
+ [
+    -1.25,
+       0,
+    1.25,
+     2.5,
+    3.75,
+       5,
+    6.25 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+       2,
+       4,
+       6 
+],
+"xlab": [
+ "0",
+"2",
+"4",
+"6" 
+],
+"xrange": [ -1.169955, 7.262833 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+     2.5,
+       5 
+],
+"ylab": [
+ "0.0",
+"2.5",
+"5.0" 
+],
+"yrange": [ -1.315713, 7.309277 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "x",
+"strip_text_xsize": "16pt",
+"xsize": "16pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "y",
+"strip_text_ysize": "16pt",
+"ysize": "16pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"2",
+"4",
+"6" 
+],
+"ylabs": [
+ "0.0",
+"2.5",
+"5.0" 
+],
+"title": "K-means Clustering (Iterations)",
+"title_size": "19.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_point_cluster",
+"geom2_point_cluster" 
+] 
+},
+"objective": {
+ "panel_margin_lines":     0.36,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      2.5,
+       5,
+     7.5,
+      10 
+] 
+],
+"y": [
+ [
+        0,
+     250,
+     500,
+     750 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1.25,
+     2.5,
+    3.75,
+       5,
+    6.25,
+     7.5,
+    8.75,
+      10 
+] 
+],
+"y": [
+ [
+        0,
+     125,
+     250,
+     375,
+     500,
+     625,
+     750,
+     875 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+      2.5,
+       5,
+     7.5,
+      10 
+],
+"xlab": [
+ "2.5",
+"5.0",
+"7.5",
+"10.0" 
+],
+"xrange": [     0.55,    10.45 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+     250,
+     500,
+     750 
+],
+"ylab": [
+ "0",
+"250",
+"500",
+"750" 
+],
+"yrange": [ -0.5359493, 927.3938 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Iteration",
+"strip_text_xsize": "16pt",
+"xsize": "16pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Total Within-Cluster SS",
+"strip_text_ysize": "16pt",
+"ysize": "16pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "2.5",
+"5.0",
+"7.5",
+"10.0" 
+],
+"ylabs": [
+ "0",
+"250",
+"500",
+"750" 
+],
+"title": "Objective Function",
+"title_size": "19.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom3_line_objective",
+"geom4_point_objective" 
+] 
+} 
+},
+"source": "https://github.com/ashishtiwari03/animint2-tests",
+"title": "K-means Animation (Medium Test)" 
+}
