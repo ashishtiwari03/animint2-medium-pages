@@ -62,28 +62,28 @@
 "aes": {
  "x": "x",
 "y": "y",
-"fill": "cluster",
+"colour": "cluster",
 "showSelected1": "iteration",
 "showSelected2": "cluster" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
-"shape":       21,
-"size":        7,
-"colour": "#000000",
-"stroke":      1.5,
+"shape":        4,
+"size":        6,
+"stroke":        2,
 "showSelected": [ "iteration", "cluster" ],
 "help_showSelected": [ "iteration", "cluster" ] 
 },
 "types": {
- "fill": "rgb",
+ "colour": "rgb",
 "x": "numeric",
 "y": "numeric",
 "showSelected1": "integer",
 "showSelected2": "factor",
 "PANEL": "integer",
-"group": "character" 
+"group": "character",
+"fill": "rgb" 
 },
 "chunk_order": [],
 "nest_order": [
@@ -126,18 +126,22 @@
 "aes": {
  "x": "iteration",
 "y": "total_ss",
+"clickSelects": "iteration",
 "showSelected1": "iteration" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
 "size":        3,
+"clickSelects": "iteration",
 "showSelected": "iteration",
+"help_clickSelects": "iteration",
 "help_showSelected": "iteration" 
 },
 "types": {
  "x": "numeric",
 "y": "numeric",
+"clickSelects": "integer",
 "showSelected1": "integer",
 "PANEL": "integer",
 "group": "character" 
@@ -176,6 +180,7 @@
 "type": "single",
 "showSelected": true,
 "chunks": "iteration",
+"clickSelects": true,
 "selected": "1",
 "levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
 "update": [
@@ -191,7 +196,7 @@
 "legend": {
  "Cluster": {
  "guide": "legend",
-"geoms": "point",
+"geoms": [ "point", "point" ],
 "title": "Cluster",
 "class": "cluster",
 "selector": "cluster",
@@ -202,63 +207,23 @@
 "entries": [
  {
  "pointcolour": "#619CFF",
-"pointshape":       19,
-"pointsize":      1.5,
-"pointstroke":      0.5,
-"label": "3",
-"pointfill": "#FFFFFF" 
-},
-{
- "pointcolour": "#00BA38",
-"pointshape":       19,
-"pointsize":      1.5,
-"pointstroke":      0.5,
-"label": "2",
-"pointfill": "#FFFFFF" 
-},
-{
- "pointcolour": "#F8766D",
-"pointshape":       19,
-"pointsize":      1.5,
-"pointstroke":      0.5,
-"label": "1",
-"pointfill": "#FFFFFF" 
-} 
-] 
-},
-"cluster": {
- "guide": "legend",
-"geoms": "point",
-"title": "cluster",
-"class": "cluster",
-"selector": "cluster",
-"is_discrete": true,
-"legend_type": "fill",
-"text_size": "12.8pt",
-"title_size": "16pt",
-"entries": [
- {
- "pointfill": "#619CFF",
-"pointshape":       21,
-"pointcolour": "#000000",
-"pointsize":        7,
-"pointstroke":      1.5,
+"pointshape":        4,
+"pointsize":        6,
+"pointstroke":        2,
 "label": "3" 
 },
 {
- "pointfill": "#00BA38",
-"pointshape":       21,
-"pointcolour": "#000000",
-"pointsize":        7,
-"pointstroke":      1.5,
+ "pointcolour": "#00BA38",
+"pointshape":        4,
+"pointsize":        6,
+"pointstroke":        2,
 "label": "2" 
 },
 {
- "pointfill": "#F8766D",
-"pointshape":       21,
-"pointcolour": "#000000",
-"pointsize":        7,
-"pointstroke":      1.5,
+ "pointcolour": "#F8766D",
+"pointshape":        4,
+"pointsize":        6,
+"pointstroke":        2,
 "label": "1" 
 } 
 ] 
